@@ -1,0 +1,51 @@
+{
+  "name": "xinovo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:long-press": "node scripts/test-message-long-press-browser.mjs",
+    "test:keyboard": "node scripts/test-chat-keyboard-browser.mjs",
+    "test:worldbook": "node scripts/test-worldbook-browser.mjs",
+    "test:push": "node scripts/test-push.mjs",
+    "test:magic-room": "node scripts/test-magic-room-browser.mjs",
+    "test:interactive": "node scripts/test-interactive-messages.mjs",
+    "test:interactive-browser": "node scripts/test-interactive-messages-browser.mjs",
+    "test:downloads": "node scripts/test-file-download.mjs",
+    "test:pomodoro": "node scripts/test-pomodoro.mjs",
+    "test:status-storage": "node scripts/test-status-storage.mjs",
+    "test:storage": "node scripts/test-storage-save-failures.mjs && node scripts/test-storage-audit.mjs && node scripts/test-token-storage.mjs && node scripts/test-status-storage.mjs",
+    "test:tokens": "node scripts/test-token-accounting.mjs && node scripts/test-token-storage.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/test-push.mjs && node scripts/verify.mjs && node scripts/test-file-download.mjs && node scripts/test-bilingual.mjs && node scripts/test-moments-batch.mjs && node scripts/test-moments-comment-edit.mjs && node scripts/test-moments-controls.mjs && node scripts/test-poke.mjs && node scripts/test-character-profile.mjs && node scripts/test-follow-up-reply.mjs && node scripts/test-prompt-studio.mjs && node scripts/test-vector-memory.mjs && node scripts/test-call-reply.mjs && node scripts/test-chat-provider-adapters.mjs && node scripts/test-api-generation-params.mjs && node scripts/test-avatar-system.mjs && node scripts/test-forum-system.mjs && node scripts/test-reply-resilience.mjs && node scripts/test-wallet-background.mjs && node scripts/test-peek-history.mjs && node scripts/test-keep-alive.mjs && node scripts/test-service-worker.mjs && node scripts/test-novelai-vibe.mjs && node scripts/test-style-rescue.mjs && node scripts/test-role-api.mjs && node scripts/test-face-lock.mjs && node scripts/test-storage-save-failures.mjs && node scripts/test-music.mjs && node scripts/test-moments-memory.mjs",
+    "test:moments": "node scripts/test-moments.mjs && node scripts/test-moments-batch.mjs && node scripts/test-moments-comment-edit.mjs && node scripts/test-moments-controls.mjs && node scripts/test-moments-memory.mjs",
+    "test:prompt": "node scripts/test-prompt-studio.mjs",
+    "test:follow-up": "node scripts/test-follow-up-reply.mjs",
+    "test:poke": "node scripts/test-poke.mjs",
+    "test:character-profile": "node scripts/test-character-profile.mjs",
+    "test:character-profile-browser": "node scripts/test-character-profile-browser.mjs",
+    "test:vector": "node scripts/test-vector-memory.mjs",
+    "test:call": "node scripts/test-call-reply.mjs",
+    "test:avatar": "node scripts/test-avatar-system.mjs",
+    "test:forum": "node scripts/test-forum-system.mjs",
+    "test:resilience": "node scripts/test-reply-resilience.mjs && node scripts/test-keep-alive.mjs",
+    "test:wallet": "node scripts/test-wallet-background.mjs",
+    "test:service-worker": "node scripts/test-service-worker.mjs && node scripts/test-file-update.mjs",
+    "test:mcp": "node scripts/test-mcp.mjs",
+    "test:media": "node scripts/test-media-providers.mjs",
+    "test:tts": "node scripts/test-tts-providers.mjs",
+    "test:vibe": "node scripts/test-novelai-vibe.mjs",
+    "test:face-lock": "node scripts/test-face-lock.mjs",
+    "test:role-api": "node scripts/test-role-api.mjs",
+    "test:music": "node scripts/test-music.mjs && node scripts/test-music-browser.mjs",
+    "test:peek": "node scripts/test-peek-history.mjs",
+    "test:peek-browser": "node scripts/test-peek-history-browser.mjs"
+  },
+  "devDependencies": {
+    "parse5": "8.0.1"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/ios": "^8.6.0"
+  }
+}
