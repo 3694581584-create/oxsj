@@ -1,0 +1,20 @@
+{
+  "project": "builder.exe ios build",
+  "platform": "ios",
+  "github": {
+    "owner": "3694581584-create",
+    "repo": "oxsj"
+  },
+  "provider": "github",
+  "codemagic": {},
+  "bitrise": {},
+  "ios": {
+    "path": "ios"
+  },
+  "flutter": {
+    "watch": {}
+  },
+  "reactNative": {},
+  "kmp": {},
+  "mobai": {}
+}
